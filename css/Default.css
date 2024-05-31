@@ -1,0 +1,86 @@
+body {
+    /* 主页面占据全显示页面，不可上下移动 */
+    height: 100vh;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+div {
+    /* div默认透明背景 */
+    background-color: rgba(0, 0, 0, 0);
+    /* div显示边框 */
+    /* border-style: inset; */
+    /* div默认无边框 */
+    /* border-width: 0px; */
+    /* div边框颜色为透明 */
+    /* border-color: rgba(0, 0, 0, 0) */
+}
+
+a {
+    /* a标签 下划线隐藏*/
+    text-decoration: none;
+}
+
+li {
+    /* 去除前面的点符号 */
+    list-style: none;
+}
+
+ol {
+    /* 去除前面的空位布局 */
+    padding: 0px;
+}
+
+.positioning {
+    /* 绝对定位 */
+    position: absolute;
+}
+
+
+.flex {
+    /* 弹性盒子开启 */
+    display: flex;
+}
+
+.flex1 {
+    /* 弹性盒子自动 */
+    flex: 1;
+}
+
+.flexcolumn {
+    /* 弹性盒子纵向 */
+    flex-direction: column;
+}
+
+.flexrow {
+    /* 弹性盒子横向 */
+    flex-direction: row;
+}
+
+.border0 {
+    /* 0边界 */
+    border: 0px;
+}
+
+.padding0 {
+    /* 0边界 */
+    padding: 0px;
+}
+
+.padding1 {
+    /* 1边界 */
+    padding: 1px;
+}
+
+.hjz {
+    /* 字符串横向居中 */
+    text-align: center;
+}
+
+.zjz {
+    /* 字符串纵向居中 */
+    align-items: center;
+    text-align: center;
+}

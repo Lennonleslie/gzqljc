@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋楼建材</title>
+    <!-- 这里是导入CSS的设定 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/Default.css">
+    <link rel="stylesheet" href="./css/temecolor.css">
+    <link rel="stylesheet" href="./css/List.CSS">
+    <style>
+    </style>
+</head>
+
+<body class="themecolor">
+    <!-- 页面 -->
+    <div class="flex flexcolumn Filldiv">
+
+        <!-- 点击区域 -->
+        <div style="height: 50px;" class="dw Filldiv flex flexcolumn click1 ">
+            <div class=" zjz dw list flex flexcolumn flex1" style=" z-index: 2;">
+                <!-- 第一行 -->
+                <div class=" zjz flex flex" style="width: 100%;height: 50px;">
+                    <!-- 分享按钮 -->
+                    <button class="flex1 list1 themecolor kjlli"
+                        data-url="https://www.kujiale.com/cloud/design/3FO3QRWXES7W/airoaming">回到默认</button>
+                    <button id="shareButton" class="flex1 list1 themecolor">分享此页链接</button>
+                </div>
+                <!-- 第二行 -->
+                <div class=" zjz flex flex1" style="width: 100%;flex-wrap: wrap; justify-content: flex-start; ">
+                    <button class="flex1 list1 themecolor kjlli" data-url="https://www.kodocode.cn"> KODOCODE </button>
+                    <button class="flex1 list1 themecolor kjlli"
+                        data-url="https://baike.baidu.com/item/%E7%94%9F%E6%80%81%E6%9D%BF/7546076"> 生态板 </button>
+                    <button class="flex1 list1 themecolor kjlli"
+                        data-url="https://tech.chinadaily.com.cn/a/202204/29/WS626b8b9fa3101c3ee7ad3320.html">ENF级别
+                    </button>
+                    <button class=" flex1 list1 themecolor kjlli"
+                        data-url="https://baike.baidu.com/item/%E6%AC%A7%E6%9D%BE%E6%9D%BF/10344612"> 欧松板 </button>
+                    <button class=" flex1 list1 themecolor kjlli" data-url="https://www.tubaobao.com/"> 兔宝宝 </button>
+                </div><!-- 第三行 -->
+                <div class=" zjz flex flex1" style="width: 100%;flex-wrap: wrap; justify-content: flex-start; ">
+                    <button class="flex1 list1 themecolor kjlli" data-url="https://www.kodocode.cn"> KODOCODE </button>
+                    <button class="flex1 list1 themecolor kjlli"
+                        data-url="https://baike.baidu.com/item/%E7%94%9F%E6%80%81%E6%9D%BF/7546076"> 生态板 </button>
+                    <button class="flex1 list1 themecolor kjlli"
+                        data-url="https://tech.chinadaily.com.cn/a/202204/29/WS626b8b9fa3101c3ee7ad3320.html">ENF级别
+                    </button>
+                    <button class=" flex1 list1 themecolor kjlli"
+                        data-url="https://baike.baidu.com/item/%E6%AC%A7%E6%9D%BE%E6%9D%BF/10344612"> 欧松板 </button>
+                    <button class=" flex1 list1 themecolor kjlli" data-url="https://www.tubaobao.com/"> 兔宝宝 </button>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+
+
+        <!-- 头部栏 -->
+        <div class="flex hjz titlecolor titleheight">
+            <!-- 左箭头 -->
+            <div style="width: 15%; height: 100% ;">
+                <button style="width: 100%; height: 100% ;" class="TransparentBackground sizecolor border0 padding0 ">
+                    <div class="titlesize zjz" style="width: 100%; height: 100% ">=</div>
+                </button>
+            </div>
+            <!-- 客户标题 -->
+            <div class="title Defaultfont zjz sizecolor themecolor" style="width: 70%; height: 100% ;">
+                <!-- 客户信息 -->
+                秋楼网上展厅
+            </div>
+
+            </button>
+            <!-- 右箭头 -->
+            <div style=" width: 15%; height: 100% ">
+                <button style="width: 100%; height: 100% ;" class="TransparentBackground sizecolor border0 padding0">
+                    <div class="titlesize zjz" style="width: 100%; height: 100% ">=</div>
+                </button>
+            </div>
+        </div>
+
+
+
+        <!-- 内容栏 -->
+        <div style="width: 100%;" class="flex1 flex flexcolumn TransparentBackground">
+
+            <!-- 中间内容 -->
+            <iframe id="contentFrame" src="https://www.kujiale.com/cloud/design/3FO3QRWXES7W/airoaming" height="100%"
+                width="100%" style=" border-left: 0vh; border-right: 0vh; flex-grow: 1" class=" border0">
+            </iframe>
+            <!-- 底部栏 -->
+            <div style="height: 20px; z-index: 3; width: 100%;bottom:0px" class="positioning TransparentBackground">
+                <p class="hjz TransparentBackground"
+                    style="width: 100%;height: 20px; font-size: small; margin-top: 0%; z-index: 1;">
+                    ——本网页由
+                    <a style="color: black;" href="https://www.kodocode.cn/" target="_blank">KODOCODE</a>
+                    技术支持——
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- JS的项目 -->
+    <script src="./ts/index.js"></script>
+
+    <!-- JS生成当前iframe页面链接 -->
+    <script>
+        document.getElementById('shareButton').addEventListener('click', async () => {
+            try {
+                // 获取iframe的src属性
+                const iframeSrc = document.getElementById('contentFrame').src;
+
+                // 将iframe的src复制到剪贴板
+                await navigator.clipboard.writeText(iframeSrc);
+
+                // 成功复制的提示
+                alert('链接已复制到剪贴板，可以分享了！');
+            } catch (err) {
+                // 如果复制失败，显示错误信息
+                console.error('复制链接失败:', err);
+                alert('复制链接失败，请手动复制链接：' + iframeSrc);
+            }
+        });
+    </script>
+
+
+
+    <!-- JS生成当前页面链接 -->
+    <!-- <script>
+            document.getElementById('shareButton').addEventListener('click', async () => {
+                try {
+                    // 获取当前页面URL
+                    const currentUrl = window.location.href;
+    
+                    // 尝试复制到剪贴板
+                    await navigator.clipboard.writeText(currentUrl);
+    
+                    // 成功复制后的提示
+                    alert('链接已复制到剪贴板，可以粘贴分享了！');
+                } catch (err) {
+                    // 如果复制失败，显示错误信息
+                    console.error('复制链接失败:', err);
+                    alert('复制链接失败，请手动复制：' + currentUrl);
+                }
+            });
+        </script> -->
+</body>
+
+</html>

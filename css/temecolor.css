@@ -1,0 +1,66 @@
+/* 主题颜色更改选项 */
+
+:root {
+    /* 透明颜色 */
+    --Tcolor: #eaede100;
+    /* body颜色 */
+    --BODYcolor: var(--Acolor);
+    /* 主题颜色 */
+    --Acolor: #EAEDE1;
+    /* 主题半透明颜色 */
+    --ATcolor: #EAEDE180;
+    /* 头部颜色 */
+    --Bcolor: #A5B5B2;
+    /* 分隔颜色 */
+    --Ccolor: #73877B;
+    /* 符号颜色 */
+    --Dcolor: #5F775F;
+    /* 文字颜色 */
+    --Ecolor: #39523F;
+}
+
+
+
+.BackColor {
+    /*背部颜色*/
+    background-color: var(--BODYcolor);
+}
+
+.themecolor {
+    /*主题颜色*/
+    /* 主要影响客户信息背景 */
+    background-color: var(--Ccolor);
+
+}
+
+.titlecolor {
+    /*抬头颜色*/
+    background-color: var(--Bcolor);
+
+}
+
+
+.sizecolor {
+    /* 文字/符号颜色*/
+    color: var(--Ecolor);
+}
+
+.TransparentBackground {
+    /* 透明背景 */
+    background-color: var(--Tcolor);
+}
+
+.Defaultfont {
+    /* 抬头区域的字体和颜色 */
+    /* 默认字体 雅黑 */
+    color: var(--Ecolor);
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    /* SimSun 宋体*/
+    /* font-family: "SimSun", Arial, sans-serif; */
+}
+
+button {
+    /* 按钮颜色边颜色 */
+    border: var(--Ecolor);
+
+}

@@ -1,0 +1,43 @@
+.titlesize {
+    /* 头部栏 */
+    font-size: 35px;
+    width: 100%;
+}
+
+.titleheight {
+    /* 头部栏 */
+    height: 50px;
+}
+
+.title {
+    /* 标题栏 */
+    font-size: 35px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.Filldiv {
+    /* 占满页面的第一个DIV */
+    height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    /* 商标设定 */
+    width: auto;
+    height: 35px;
+}
+
+.kjlli {
+    flex: 1 0 auto;
+    /* flex-grow flex-shrink flex-basis 的简写 */
+    /* 这里的 flex: 1 0 auto; 表示所有子元素等分空间 */
+    min-width: 100px;
+    /* 可以设置最小宽度，避免子元素过小 */
+    margin: 5px;
+    /* 添加一些间距 */
+    padding: 10px;
+    box-sizing: border-box;
+    /* 包含边框和内填充在计算宽度内 */
+    text-align: center;
+}
