@@ -97,3 +97,29 @@
     background-color: var(--Acolor);
 
 }
+
+/* ts触发器 */
+.click1-clicked {
+
+    .list {
+        position: absolute;
+        width: 100vw;
+        left: -0vw;
+        height: calc(100vh - 50px);
+        transition:
+            left 0.8s ease,
+            height 0.8s ease,
+            width 0.8s ease,
+            border-radius 1s ease,
+            background-color 2s ease;
+        background-color: var(--ATcolor);
+        border-radius: 0px;
+    }
+
+    .list1 {
+        height: 50px;
+        border-width: 1px;
+        font-size: 25px;
+    }
+
+}
