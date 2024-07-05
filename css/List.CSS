@@ -19,7 +19,7 @@
     position: fixed;
     left: 0;
     top: 50px;
-    width: 25vw;
+    width: 35vw;
     height: calc(100vh - 50px);
     background-color: var(--ATcolor);
     overflow: auto;
@@ -44,9 +44,9 @@
 .list2 {
     z-index: 4;
     position: fixed;
-    left: 25vw;
+    left: 35vw;
     top: 50px;
-    width: 75vw;
+    width: 65vw;
     height: calc(100vh - 50px);
     background-color: var(--ATcolor);
     text-align: center;
@@ -64,4 +64,43 @@
     font-size: 30px;
     align-items: center;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .dzbt {
+        font-size: 25px;
+        border-radius: 25px;
+    }
+
+    .hxbutton {
+        font-size: 25px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .dzbt {
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    .hxbutton {
+        font-size: 20px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .dzbt {
+        font-size: 16px;
+        border-radius: 25px;
+    }
+
+    .hxbutton {
+        font-size: 16px;
+        border-radius: 25px;
+    }
 }

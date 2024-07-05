@@ -45,9 +45,9 @@
     /* 这里的 flex: 1 0 auto; 表示所有子元素等分空间 */
     min-width: 100px;
     /* 可以设置最小宽度，避免子元素过小 */
-    margin: 5px;
+    /* margin: 5px; */
     /* 添加一些间距 */
-    padding: 10px;
+    /* padding: 10px; */
     box-sizing: border-box;
     /* 包含边框和内填充在计算宽度内 */
     text-align: center;
