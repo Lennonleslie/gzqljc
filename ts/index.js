@@ -57,7 +57,7 @@ function dzremoveClass() {
     }
     ;
 }
-// 获取楼盘序号,切换为对应户型的DIV.并给这个户型的DIV添加一个显示的类
+// 获取楼盘序号,切换为对应户型的DIV.并给这个户型的DIV添加一个显示的类(用于楼盘户型的显示切换)
 // 全文加载完成才能运行这段函数.
 document.addEventListener('DOMContentLoaded', function () {
     // 初始化第一个内容显示
@@ -88,14 +88,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 // 户型信息的替换实现
-// 全文中找到所有类型为list2的div，然后为每个div添加一个点击事件监听器。
-document.querySelectorAll('.list2').forEach((div) => {
-    div.addEventListener('click', function () {
-        // 类型断言，因为我们确信querySelector的结果是一个HTMLElement
-        const textToCopy = this.querySelector('.kjllj').textContent;
-        // 类型断言，因为我们确信querySelector的结果是一个HTMLElement
-        const houseTypeNameDiv = document.querySelector('.hxxx');
-        // 更新文本内容
-        houseTypeNameDiv.textContent = textToCopy;
-    });
+document.querySelectorAll('.list2 .kjllj').forEach((button) => {
+    if (button instanceof HTMLElement) {
+        button.addEventListener('click', (event) => {
+            // 直接从被点击的按钮获取文本，无需再通过 event.currentTarget 查询
+            const textToCopy = button.textContent;
+            // 查找页面上的.hxxx元素并更新其文本
+            const houseTypeNameDiv = document.querySelector('.hxxx');
+            if (houseTypeNameDiv) {
+                houseTypeNameDiv.textContent = textToCopy || ''; // 确保有默认值以防textContent为空
+            }
+        });
+    }
 });
