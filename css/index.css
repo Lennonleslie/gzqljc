@@ -1,3 +1,5 @@
+@import 'themecolor.css';
+
 .titlesize {
     /* 头部栏 */
     font-size: 35px;
@@ -16,6 +18,15 @@
     border-radius: 50px;
 }
 
+.hxxx {
+    /* 户型信息 */
+    width: 30%;
+    height: 20px;
+    margin-top: 0%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
 .Filldiv {
     /* 占满页面的第一个DIV */
     height: 100vh;
@@ -28,7 +39,7 @@
     height: 35px;
 }
 
-.kjlli {
+.kjllj {
     flex: 1 0 auto;
     /* flex-grow flex-shrink flex-basis 的简写 */
     /* 这里的 flex: 1 0 auto; 表示所有子元素等分空间 */
@@ -40,4 +51,49 @@
     box-sizing: border-box;
     /* 包含边框和内填充在计算宽度内 */
     text-align: center;
+}
+
+/* 按钮样式 */
+button {
+    color: var(--Acolor);
+    background-color: var(--Dcolor);
+}
+
+button:active,
+button:focus {
+    color: var(--Dcolor);
+    background-color: var(--ADcolor);
+}
+
+/* 滚动条样式 */
+
+/* 定义滚动条的宽度 */
+::-webkit-scrollbar {
+    width: 5px;
+    /* 对于垂直滚动条的宽度 */
+    height: 10px;
+    /* 对于水平滚动条的高度 */
+}
+
+/* 定义滚动条轨道的样式 */
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* 轨道颜色 */
+    border-radius: 5px;
+    /* 圆角 */
+}
+
+/* 定义滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 滑块颜色 */
+    border-radius: 5px;
+    /* 圆角 */
+    transition: background-color 0.2s ease;
+    /* 平滑过渡效果 */
+}
+
+/* 当鼠标悬停在滑块上时改变滑块颜色 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }

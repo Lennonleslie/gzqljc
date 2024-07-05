@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>秋楼之家</title>
+    <title>贵阳秋楼之家</title>
     <!-- 这里是导入CSS的设定 -->
-    <link rel="stylesheet" href="./css/Default.css">
-    <link rel="stylesheet" href="./css/temecolor.css">
-    <link rel="stylesheet" href="./css/List.CSS">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../../css/Default.css">
+    <link rel="stylesheet" href="../../css/temecolor.css">
+    <link rel="stylesheet" href="../../css/List.CSS">
+    <link rel="stylesheet" href="../../css/index.css">
     <style>
     </style>
 </head>
@@ -26,26 +26,23 @@
 
         <!-- 地址菜单 -->
         <div id="dzcd" class="none list1 flexcolumn">
-            <button id="dz1" class="hjz dzbt">合作伙伴</button>
-            <!-- <button id="dz2" class="hjz dzbt">合作伙伴</button> -->
+            <button id="dz1" class="hjz dzbt">风格推荐</button>
+            <button id="dz2" class="hjz dzbt">合作伙伴</button>
         </div>
         <!-- 户型菜单 -->
         <div id="hxcd" class="none">
             <!-- 地址1的户型 -->
             <div id="hx1" class="list2 none flexcolumn">
-                <button class="hjz kjllj hxbutton" onclick="location.href='./partners/renhuai/index.html'">秋楼仁怀</button>
-                <button class="hjz kjllj hxbutton" onclick="location.href='./partners/guiyang/index.html'">秋楼贵阳</button>
+                <button class="hjz kjllj hxbutton" data-url="https://yun.kujiale.com/design/3FO3QLR9YEIE/show">现代简约
+                </button>
                 <!-- <button class="hjz kjllj hxbutton" onclick="location.href='./404.html'">无方案</button> -->
             </div>
             <!-- 地址2的户型 -->
             <div id="hx2" class="list2 none flexcolumn">
-                <!-- <button class="hjz kjllj hxbutton"
-                    onclick="window.open('./partners/guiyang/index.html', '_blank')">新窗口打开</button> -->
-            </div>
-            <!-- 地址3的户型 -->
-            <div id="hx3" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton" onclick="location.href='../../index.html'">秋楼之家</button>
             </div>
         </div>
+
         <!-- 点击区域END -->
 
 
@@ -60,7 +57,7 @@
             <!-- 客户标题 -->
             <div class="title Defaultfont zjz sizecolor themecolor" style="width: 70%; height: 100% ;">
                 <!-- 客户信息 -->
-                秋楼之家展厅
+                贵阳秋楼之家
             </div>
             </button>
             <!-- 返回 -->
@@ -109,7 +106,7 @@
 
 
     <!-- JS的项目 -->
-    <script src="./ts/index.js"></script>
+    <script src="../../ts/index.js"></script>
 
     <!-- JS生成当前iframe页面链接 -->
     <script>
@@ -131,27 +128,6 @@
         });
     </script>
 
-
-
-    <!-- JS生成当前页面链接 -->
-    <!-- <script>
-            document.getElementById('shareButton').addEventListener('click', async () => {
-                try {
-                    // 获取当前页面URL
-                    const currentUrl = window.location.href;
-    
-                    // 尝试复制到剪贴板
-                    await navigator.clipboard.writeText(currentUrl);
-    
-                    // 成功复制后的提示
-                    alert('链接已复制到剪贴板，可以粘贴分享了！');
-                } catch (err) {
-                    // 如果复制失败，显示错误信息
-                    console.error('复制链接失败:', err);
-                    alert('复制链接失败，请手动复制：' + currentUrl);
-                }
-            });
-        </script> -->
 </body>
 
 </html>

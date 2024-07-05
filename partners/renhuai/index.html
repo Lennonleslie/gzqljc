@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仁怀秋楼之家</title>
+    <!-- 这里是导入CSS的设定 -->
+    <link rel="stylesheet" href="../../css/Default.css">
+    <link rel="stylesheet" href="../../css/temecolor.css">
+    <link rel="stylesheet" href="../../css/List.CSS">
+    <link rel="stylesheet" href="../../css/index.css">
+    <style>
+    </style>
+</head>
+
+<body class="themecolor">
+    <!-- 页面 -->
+    <div class="flex flexcolumn Filldiv">
+
+        <!-- 点击区域  添加函数(给指定ID元素绑定一个类) -->
+        <div class="click1" style="left: 0%;" onclick="dzaddClass()"> </div>
+        <!-- 返回点击区域  添加函数(给指定ID元素移除一个类) -->
+        <div class="click1" style="right: 0%;" onclick="dzremoveClass()"> </div>
+
+        <!-- 地址菜单 -->
+        <div id="dzcd" class="none list1 flexcolumn">
+            <button id="dz1" class="hjz dzbt">风格推荐</button>
+            <button id="dz2" class="hjz dzbt">合作伙伴</button>
+            <button id="dz3" class="hjz dzbt">荣光未来城</button>
+            <button id="dz4" class="hjz dzbt">隆贸城</button>
+            <button id="dz5" class="hjz dzbt">鹿鸣东方</button>
+            <button id="dz6" class="hjz dzbt">绿城</button>
+            <button id="dz7" class="hjz dzbt">景湖公园</button>
+            <button id="dz8" class="hjz dzbt">城南1号</button>
+            <button id="dz9" class="hjz dzbt">金域华府</button>
+            <button id="dz10" class="hjz dzbt">万达</button>
+            <button id="dz11" class="hjz dzbt">国酒新城</button>
+            <button id="dz12" class="hjz dzbt">金科利悦东方</button>
+            <button id="dz13" class="hjz dzbt">炮台</button>
+            <button id="dz14" class="hjz dzbt">上城国际</button>
+            <button id="dz15" class="hjz dzbt">碧桂园天玺</button>
+            <button id="dz16" class="hjz dzbt">国酒城南府</button>
+            <button id="dz17" class="hjz dzbt">龙城北苑</button>
+            <button id="dz18" class="hjz dzbt">香谢公园里</button>
+            <button id="dz19" class="hjz dzbt">酒都盛世</button>
+            <button id="dz20" class="hjz dzbt">水晶华府</button>
+            <button id="dz21" class="hjz dzbt">凤凰家园</button>
+            <button id="dz22" class="hjz dzbt">铂金城</button>
+            <button id="dz23" class="hjz dzbt">华新城</button>
+            <button id="dz24" class="hjz dzbt"></button>
+        </div>
+        <!-- 户型菜单 -->
+        <div id="hxcd" class="none">
+            <!-- 地址1的户型 -->
+            <div id="hx1" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton" data-url="https://yun.kujiale.com/design/3FO3QLR9YEIE/show">现代简约
+                </button>
+                <!-- <button class="hjz kjllj hxbutton" onclick="location.href='./404.html'">无方案</button> -->
+            </div>
+            <!-- 地址2的户型 -->
+            <div id="hx2" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton" onclick="location.href='../../index.html'">秋楼之家</button>
+            </div>
+            <!-- 地址3的户型 -->
+            <div id="hx3" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3QLR9YEIE/show">荣光未来城3-13-2</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3QEWJIWR7/airoaming">荣光未来城A</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3WTK0MTIV/airoaming">荣光未来城B</button>
+            </div>
+            <!-- 地址4的户型 -->
+            <div id="hx4" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3Q7PSHB0B/show">隆贸城1-11-2</button>
+            </div>
+            <!-- 地址5的户型 -->
+            <div id="hx5" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3QLX8HEF1/airoaming">鹿鸣东方2-3-2</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO40HI7OAL5/airoaming">鹿鸣东方3-901</button>
+            </div>
+            <!-- 地址6的户型 -->
+            <div id="hx6" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3QM1XYUG1/airoaming">绿城2-9-6
+
+                </button>
+            </div>
+            <!-- 地址7的户型 -->
+            <div id="hx7" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3V3NHABS2/airoaming">景湖公园3-13-2
+                </button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3UMPBI8QR/airoaming">景湖二期</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3UVH0U6FS/airoaming">景湖A</button>
+            </div>
+            <!-- 地址8的户型 -->
+            <div id="hx8" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3NOO9EHWK/airoaming">城南1号13-27-1</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3QRKW80Y2/airoaming">城南1号13-903</button>
+            </div>
+            <!-- 地址9的户型 -->
+            <div id="hx9" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3PS7OQGRI/airoaming">金域华府2-10-3</button>
+            </div>
+            <!-- 地址10的户型 -->
+            <div id="hx10" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3R3K7I0NB/airoaming">万达6-6-1</button>
+            </div>
+            <!-- 地址11的户型 -->
+            <div id="hx11" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3VAS6DAXO/airoaming">国酒新城二期6-601</button>
+            </div>
+            <!-- 地址12的户型 -->
+            <div id="hx12" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3WYBIXA8R/airoaming">金科利悦东方7-304</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO418P1KCXI/airoaming">金科16-2-18-2</button>
+            </div>
+            <!-- 地址13的户型 -->
+            <div id="hx13" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3UJW21PU0/airoaming">炮台A</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3VJJRUOIX/airoaming">炮台13-27-1</button>
+            </div>
+            <!-- 地址14的户型 -->
+            <div id="hx14" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3TKEAOQHH/airoaming">上城国际6-605</button>
+            </div>
+            <!-- 地址15的户型 -->
+            <div id="hx15" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3VQEFVC3R/show">碧桂园天玺A</button>
+            </div>
+            <!-- 地址16的户型 -->
+            <div id="hx16" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3VXAHNOE1/show">国酒城南府A</button>
+            </div>
+            <!-- 地址17的户型 -->
+            <div id="hx17" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3VL98E12V/show">龙城北苑A</button>
+            </div>
+            <!-- 地址18的户型 -->
+            <div id="hx18" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3VO3BTW41/show">香谢公园里A</button>
+            </div>
+            <!-- 地址19的户型 -->
+            <div id="hx19" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO40I7FHHAK/airoaming">酒都盛世A</button>
+            </div>
+            <!-- 地址20的户型 -->
+            <div id="hx20" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3YK2U1B52/airoaming">水晶华府4-3-2</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO40165B2IB/airoaming">水晶华府3-8-1</button>
+            </div>
+            <!-- 地址21的户型 -->
+            <div id="hx21" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3TEBUA0X0/airoaming">凤凰家园A</button>
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3TLSLBBVF/airoaming">凤凰家园B</button>
+            </div>
+            <!-- 地址22的户型 -->
+            <div id="hx22" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3W87X27M8/airoaming">铂金城</button>
+            </div>
+            <!-- 地址23的户型 -->
+            <div id="hx23" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton"
+                    data-url="https://yun.kujiale.com/design/3FO3TQQULVMO/airoaming">华新城2-22-3</button>
+            </div>
+            <!-- 地址24的户型 -->
+            <div id="hx24" class="list2 none flexcolumn">
+                <button class="hjz kjllj hxbutton" onclick="location.href='./404.html'">无方案</button>
+            </div>
+        </div>
+
+        <!-- 点击区域END -->
+
+
+        <!-- 头部栏 -->
+        <div class="flex hjz titlecolor titleheight">
+            <!-- 左箭头 -->
+            <div style="width: 15%; height: 100% ;">
+                <button style="width: 15%; height: 100% ;" class="TransparentBackground sizecolor border0 padding0 ">
+                    <div class="titlesize zjz" style="width: 100%; height: 100% ">=</div>
+                </button>
+            </div>
+            <!-- 客户标题 -->
+            <div class="title Defaultfont zjz sizecolor themecolor" style="width: 70%; height: 100% ;">
+                <!-- 客户信息 -->
+                仁怀秋楼之家
+            </div>
+            </button>
+            <!-- 返回 -->
+            <div style=" width: 15%; height: 100% ">
+                <button style="width: 15%; height: 100% ;" class="TransparentBackground sizecolor border0 padding0 ">
+                    <div class="titlesize zjz" style="width: 100%; height: 100%;">←</div>
+                </button>
+            </div>
+        </div>
+
+
+
+        <!-- 内容栏 -->
+        <div style="width: 100%;" class="flex1 flex flexcolumn TransparentBackground">
+
+            <!-- 中间内容 -->
+            <iframe id="contentFrame" src="" height="100%" width="100%"
+                style=" border-left: 0vh; border-right: 0vh; flex-grow: 1; background-image: url(https://api.paugram.com/bing/);"
+                class=" border0">
+            </iframe>
+            <!-- 底部栏 -->
+            <div style="height: 20px; z-index: 3; width: 100%;bottom:0px" class="positioning TransparentBackground">
+                <p class="hjz TransparentBackground"
+                    style="width: 100%;height: 20px; font-size: small; margin-top: 0%;">
+                    ——本网页由
+                    <a style="color: black;" href="https://www.kodocode.cn/" target="_blank">KODOCODE</a>
+                    技术支持——
+                </p>
+            </div>
+            <div style="height: 00px; z-index: 3; width: 100%;top:50px" class="positioning flex">
+                <div class="flex1"></div>
+                <div class="hjz Defaultfont titlecolor hxxx">
+                    户型名称
+                </div>
+                <div class="flex1"></div>
+            </div>
+            <!-- 底部栏end -->
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- JS的项目 -->
+    <script src="../../ts/index.js"></script>
+
+    <!-- JS生成当前iframe页面链接 -->
+    <script>
+        document.getElementById('shareButton').addEventListener('click', async () => {
+            try {
+                // 获取iframe的src属性
+                const iframeSrc = document.getElementById('contentFrame').src;
+
+                // 将iframe的src复制到剪贴板
+                await navigator.clipboard.writeText(iframeSrc);
+
+                // 成功复制的提示
+                alert('链接已复制到剪贴板，可以分享了！');
+            } catch (err) {
+                // 如果复制失败，显示错误信息
+                console.error('复制链接失败:', err);
+                alert('复制链接失败，请手动复制链接：' + iframeSrc);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
